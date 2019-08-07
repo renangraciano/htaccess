@@ -106,6 +106,19 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 </IfModule>
 ```
 
+### Force HTTPS with Directory Redirection
+``` apacheconf
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+```
+
 ### Force HTTPS Behind a Proxy
 Useful if you have a proxy in front of your server performing TLS termination.
 ``` apacheconf
