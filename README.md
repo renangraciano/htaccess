@@ -18,6 +18,7 @@ What we are doing here is mostly collecting useful snippets from all over the in
     - [Force non-www in a Generic Way](#force-non-www-in-a-generic-way)
     - [Force HTTPS](#force-https)
     - [Force HTTPS Behind a Proxy](#force-https-behind-a-proxy)
+    - [Force HTTPS With Directory redirect ](#force-https-with-directory-redirection)
     - [Force Trailing Slash](#force-trailing-slash)
     - [Remove Trailing Slash](#remove-trailing-slash)
     - [Redirect a Single Page](#redirect-a-single-page)
